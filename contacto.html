@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Programa académico de Innovación Social de la Facultad de Ciencias Sociales"
+    >
+
+    <title>Facultad de Ciencias Sociales</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav
+            class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+            aria-label="Navegación principal"
+        >
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <i class="bi bi-mortarboard-fill"></i>
+                    Ciencias Sociales
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir o cerrar menú de navegación"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div
+                    class="collapse navbar-collapse"
+                    id="menuPrincipal"
+                >
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="index.html"
+                            >
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="programa.html"
+                            >
+                                Programa
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                href="programa.html"
+                                aria-current="page"
+                            >
+                                Contacto
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            </nav>
+    </header>
+    <main>
+
+        <section class="hero-contacto text-white">
+            <div class="container text-center">
+
+                <h1 class="fw-bold">
+                    Contacto
+                </h1>
+
+                <p class="lead">
+                    Solicita más información sobre nuestro programa.
+                </p>
+
+            </div>
+        </section>
+
+        <section
+            class="py-5"
+            aria-labelledby="tituloFormulario"
+        >
+            <div class="container">
+
+                <div class="row g-5">
+
+                    <div class="col-12 col-lg-5">
+
+                        <h2 class="fw-bold">
+                            Información
+                        </h2>
+
+                        <p>
+                            Comunícate con la Facultad de Ciencias Sociales.
+                        </p>
+
+                        <p>
+                            <i
+                                class="bi bi-geo-alt-fill"
+                                aria-hidden="true"
+                            ></i>
+
+                            Urb. Tupac Amaru A1-15, Perú
+                        </p>
+
+                        <p>
+                            <i
+                                class="bi bi-telephone-fill"
+                                aria-hidden="true"
+                            ></i>
+
+                            <a href="tel:+51988461292">
+                                +51 988 461 292
+                            </a>
+                        </p>
+
+                        <p>
+                            <i
+                                class="bi bi-envelope-fill"
+                                aria-hidden="true"
+                            ></i>
+
+                            <a href="mailto:jhoelpumahuaman123@gmail.com">
+                                jhoelpumahuaman123@gmail.com
+                            </a>
+                        </p>
+
+                    </div>
+
+                    <div class="formulario-card col-12 col-lg-7">
+
+                        <h2
+                            id="tituloFormulario"
+                            class="fw-bold"
+                        >
+                            Formulario de consulta
+                        </h2>
+
+                        <div
+                            id="mensajeFormulario"
+                            class="alert d-none"
+                            role="alert"
+                            aria-live="polite"
+                        ></div>
+
+                        <form
+                            id="formularioContacto"
+                            novalidate
+                        >
+
+                            <div class="mb-3">
+
+                                <label
+                                    for="nombre"
+                                    class="form-label"
+                                >
+                                    Nombre completo
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="nombre"
+                                    name="nombre"
+                                    required
+                                    minlength="3"
+                                    aria-describedby="errorNombre"
+                                >
+
+                                <div
+                                    id="errorNombre"
+                                    class="invalid-feedback"
+                                >
+                                    Escribe un nombre de al menos tres caracteres.
+                                </div>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label
+                                    for="correo"
+                                    class="form-label"
+                                >
+                                    Correo electrónico
+                                </label>
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="correo"
+                                    name="correo"
+                                    required
+                                    aria-describedby="errorCorreo"
+                                >
+
+                                <div
+                                    id="errorCorreo"
+                                    class="invalid-feedback"
+                                >
+                                    Ingresa un correo electrónico válido.
+                                </div>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label
+                                    for="telefono"
+                                    class="form-label"
+                                >
+                                    Teléfono
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="telefono"
+                                    name="telefono"
+                                    pattern="[0-9]{9}"
+                                    required
+                                    aria-describedby="errorTelefono"
+                                >
+
+                                <div
+                                    id="errorTelefono"
+                                    class="invalid-feedback"
+                                >
+                                    Ingresa un número de nueve dígitos.
+                                </div>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label
+                                    for="programa"
+                                    class="form-label"
+                                >
+                                    Motivo de consulta
+                                </label>
+
+                                <select
+                                    id="programa"
+                                    name="programa"
+                                    class="form-select"
+                                    required
+                                >
+                                    <option value="">
+                                        Selecciona una opción
+                                    </option>
+
+                                    <option value="admision">
+                                        Proceso de admisión
+                                    </option>
+
+                                    <option value="costos">
+                                        Costos y pagos
+                                    </option>
+
+                                    <option value="programa">
+                                        Boleta de notas
+                                    </option>
+                                </select>
+
+                                <div class="invalid-feedback">
+                                    Selecciona un motivo de consulta.
+                                </div>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label
+                                    for="mensaje"
+                                    class="form-label"
+                                >
+                                    Mensaje
+                                </label>
+
+                                <textarea
+                                    id="mensaje"
+                                    name="mensaje"
+                                    class="form-control"
+                                    rows="5"
+                                    required
+                                    minlength="10"
+                                    aria-describedby="errorMensaje"
+                                ></textarea>
+
+                                <div
+                                    id="errorMensaje"
+                                    class="invalid-feedback"
+                                >
+                                    Escribe un mensaje de al menos diez caracteres.
+                                </div>
+
+                            </div>
+
+                            <div class="form-check mb-3">
+
+                                <input
+                                    type="checkbox"
+                                    class="form-check-input"
+                                    id="privacidad"
+                                    required
+                                >
+
+                                <label
+                                    class="form-check-label"
+                                    for="privacidad"
+                                >
+                                    Acepto el tratamiento de mis datos personales.
+                                </label>
+
+                                <div class="invalid-feedback">
+                                    Debes aceptar el tratamiento de datos.
+                                </div>
+
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary"
+                                aria-label="Enviar formulario de contacto"
+                            >
+                                <i
+                                    class="bi bi-send-fill"
+                                    aria-hidden="true"
+                                ></i>
+                                Enviar consulta
+                            </button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6">
+                    <h2 class="h5">
+                        Facultad de Ciencias Sociales
+                    </h2>
+
+                    <p class="mb-0">
+                        Programa Académico de Innovación Social.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-6 text-md-end">
+
+                    <a
+                        href="https://www.facebook.com/"
+                        class="text-white me-3"
+                        aria-label="Visitar nuestra página de Facebook"
+                    >
+                        <i
+                            class="bi bi-facebook"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                    <a
+                        href="https://www.instagram.com/"
+                        class="text-white me-3"
+                        aria-label="Visitar nuestra página de Instagram"
+                    >
+                        <i
+                            class="bi bi-instagram"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                    <a
+                        href="mailto:informes@universidad.edu.pe"
+                        class="text-white"
+                        aria-label="Enviar correo a la facultad"
+                    >
+                        <i
+                            class="bi bi-envelope-fill"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <hr>
+
+            <p class="text-center mb-0">
+                &copy; <span id="anioActual"></span>
+                Facultad de Ciencias Sociales
+            </p>
+
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

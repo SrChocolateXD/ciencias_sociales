@@ -1,0 +1,187 @@
+/* Diseño Mobile First */
+
+:root {
+    --color-principal: #0b3c6f;
+    --color-secundario: #ffc107;
+    --color-texto: #212529;
+    --color-claro: #f8f9fa;
+    --color-blanco: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding-top: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+.navbar {
+    background-color: var(--color-principal) !important;
+}
+
+.hero {
+    min-height: 85vh;
+    padding: 60px 15px;
+    background:
+        linear-gradient(
+            rgba(0, 25, 60, 0.75),
+            rgba(0, 25, 60, 0.75)
+        ),
+        url("../img/facultad.jpg") center/cover no-repeat;
+}
+
+.hero h1 {
+    font-size: 2rem;
+}
+.hero-programa{
+
+    background:
+        linear-gradient(
+            rgba(0, 25, 60, 0.75),
+            rgba(0, 25, 60, 0.75)
+        ),
+        url("../img/investigacion.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+}
+.hero-contacto{
+
+    background:
+        linear-gradient(
+            rgba(0, 25, 60, 0.75),
+            rgba(0, 25, 60, 0.75)
+        ),
+        url("../img/contacto.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+}
+.icono-beneficio {
+    font-size: 3rem;
+    color: var(--color-principal);
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.imagen-carrusel {
+    height: 260px;
+    object-fit: cover;
+}
+
+.seccion-accion {
+    background-color: var(--color-principal);
+}
+
+img {
+    max-width: 100%;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 3px solid #ffbf47;
+    outline-offset: 3px;
+}
+
+.formulario-card{
+
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+
+    transition: .3s;
+
+}
+
+.formulario-card:hover{
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 25px 50px rgba(0,0,0,.20);
+
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .imagen-carrusel {
+        height: 400px;
+    }
+}
+
+/* Escritorio */
+
+@media (min-width: 992px) {
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero p {
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imagen-carrusel {
+        height: 500px;
+    }
+}
